@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/cakestore</property>
+		<property name="hibernate.connection.characterEncoding">UTF-8</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password"></property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+
+		<mapping class="com.chenlaoda.cake.entity.Cake" />
+        <mapping class="com.chenlaoda.cake.entity.Comment" />
+        <mapping class="com.chenlaoda.cake.entity.Log" />
+        <mapping class="com.chenlaoda.cake.entity.ShopCart" />
+        <mapping class="com.chenlaoda.cake.entity.Size" />
+        <mapping class="com.chenlaoda.cake.entity.Type" />
+        <mapping class="com.chenlaoda.cake.entity.User" />
+        <mapping class="com.chenlaoda.cake.entity.Cake_size" />
+        <mapping class="com.chenlaoda.cake.entity.Cake_type" />
+	</session-factory>
+</hibernate-configuration>
